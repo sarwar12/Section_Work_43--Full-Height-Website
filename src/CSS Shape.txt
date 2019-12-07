@@ -1,0 +1,2 @@
+### CSS SHAPE SITE:
+	https://css-tricks.com/the-shapes-of-css/

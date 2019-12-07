@@ -1,0 +1,194 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body,html {
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+
+/* Custom Font CSS Start */
+@font-face{
+	font-family: MrDeHaviland;
+	src: url(../fonts/MrDeHaviland-Regular.ttf);
+}
+/* Custom Font CSS Stop */
+
+/* Header Section Start */
+.header-area {
+	background-image: url(../img/foods.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.home-area-logo h3 {
+	font-family: MrDeHaviland;
+	font-size: 100px;
+	color: lightseagreen;
+	text-transform: capitalize;
+	line-height: 60px;
+	margin: 0;
+}
+.home-area-logo h2 {
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.welcome-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.logo a {
+  text-transform: uppercase;
+  color: blueviolet;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding-bottom: 5px;
+}
+.logo h1 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin: 0;
+}
+.logo a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: blueviolet;
+}
+.mainmenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mainmenu ul li {
+  display: inline-block;
+  text-align: right;
+  padding-left: 30px;
+}
+.mainmenu ul li a {
+  display: inline-block;
+  color: lightseagreen;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+}
+.mainmenu ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: lightseagreen;
+}
+.mainmenu {
+  margin-top: 3px;
+}
+.header-area:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  z-index: -1;
+  opacity: .2;
+}
+.home-area-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.home-area-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.scroll-top-about {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  color: #fff;
+  font-size: 50px;
+  height: 40px;
+  width: 40px;
+  margin-left: -20px;
+  opacity: .8;
+}
+.bordered-area {
+  overflow: hidden;
+  max-width: 335px;
+  margin: 0 auto;
+}
+.bordered-left, .bordered-right {
+	float: left;
+	height: 2px;
+	width: 42%;
+	background: #fff;
+	margin-top: 8px;
+	position: relative;
+}
+.bordered-area i.fas {
+	float: left;
+	margin: 0 20px;
+	color: #ffffce;
+	font-size: 15px;
+}
+.home-area-logo {
+  text-transform: uppercase;
+  color: #fff;
+}
+.home-area-logo p {
+  margin-top: 15px;
+}
+	/* CSS SHAPE*/
+/* .bordered-right{
+	position: relative;
+} */
+.bordered-right::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-right: 10px solid #fff;
+	border-bottom: 5px solid transparent;
+	top: -4px;
+}
+.bordered-left::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 5px solid transparent;
+	top: -4px;
+}
+/* Header Section Stop */
